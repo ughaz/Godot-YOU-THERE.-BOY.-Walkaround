@@ -4,7 +4,7 @@ var dialog:String = """""";
 var selected:bool = false;
 var dialogBoxInstance;
 var dialogBox = load("res://UI/Dialog Box/DialogPlayer.tscn")
-var imageTexture:Texture
+var imageTexture:Texture2D
 
 func _ready() -> void:
 	call_deferred("set_image_texture")
@@ -26,13 +26,13 @@ func _exit_tree():
 func _process(_delta):
 	if (!Global.dialogOpen && !Global.fading && selected && Input.is_action_just_pressed("click")):
 		Global.remove_commands();
-		if (!dialog.empty() && dialog != null):
-			dialogBoxInstance = dialogBox.instance();
+		if (!dialog.is_empty() && dialog != null):
+			dialogBoxInstance = dialogBox.instantiate();
 			Global.dialogsNode.add_child(dialogBoxInstance);
 			dialogBoxInstance.dialog = dialog;
 	if (Global.dialogClosing):
 		queue_free();
 
 func _on_ImageBox_gui_input(_event: InputEvent) -> void:
-	if ((dialog.empty() || dialog == null) && Input.is_action_just_pressed("click") && Global.imageOpen):
+	if ((dialog.is_empty() || dialog == null) && Input.is_action_just_pressed("click") && Global.imageOpen):
 		queue_free()

@@ -2,13 +2,13 @@ extends Node
 
 var currentScene = null;
 
-export var hoverNodes = [];
+@export var hoverNodes = [];
 
 var playerNode;
-onready var commandsNode = Ui.get_node_or_null("Commands");
-onready var dialogsNode = Ui.get_node_or_null("Dialogs");
-onready var imagesNode = Ui.get_node_or_null("Images");
-onready var fadeNode = Ui.get_node_or_null("Fade")
+@onready var commandsNode = Ui.get_node_or_null("Commands");
+@onready var dialogsNode = Ui.get_node_or_null("Dialogs");
+@onready var imagesNode = Ui.get_node_or_null("Images");
+@onready var fadeNode = Ui.get_node_or_null("Fade")
 
 var tweenNode;
 var audioNode;
@@ -28,16 +28,12 @@ var warpPos:Vector2 = Vector2.ZERO;
 var posPath:String
 
 var muteAudio:bool = false;
-onready var masterBus = AudioServer.get_bus_index("Master");
+@onready var masterBus = AudioServer.get_bus_index("Master");
 
 
 func _ready():
 	Input.set_custom_mouse_cursor(load("res://UI/cursor.png"),Input.CURSOR_ARROW)
 	Input.set_custom_mouse_cursor(load("res://UI/cursor_select.png"),Input.CURSOR_POINTING_HAND,Vector2(14, 0))
-	
-	tweenNode = Tween.new();
-	add_child(tweenNode);
-	tweenNode.connect("tween_completed", self, "_on_tween_completed");
 	
 	audioNode = AudioStreamPlayer.new();
 	add_child(audioNode);
@@ -55,7 +51,7 @@ func mute_audio(mute):
 func init_nodes():
 	playerNode = currentScene.get_node_or_null("Player");
 	if (!playerNode):
-		playerNode = currentScene.get_node_or_null("YSort/Player");
+		playerNode = currentScene.get_node_or_null("Node2D/Player");
 		if (!playerNode):
 			playerNode = currentScene.get_node_or_null("%Player")
 	
@@ -67,13 +63,15 @@ func init_nodes():
 func fadeto_scene(path, pos):
 	fading = true;
 	fadeScene = path;
-	posPath = pos; assert(pos != "", "warpPos needs the name of a Position2D!");
-	var time = 0.3;
-	tweenNode.interpolate_property(fadeNode,"color", Color(0,0,0,0), Color(0,0,0,1), time, Tween.TRANS_LINEAR, Tween.EASE_OUT);
-	tweenNode.start();
-
-
-func _on_tween_completed(_object, _key):
+	posPath = pos; assert(pos != "", "warpPos needs the name of a Marker2D!");
+	var transTime = 0.3;
+	var tween := create_tween()
+	tween.set_trans(Tween.TRANS_LINEAR)
+	tween.set_ease(Tween.EASE_OUT)
+	tween.tween_property(fadeNode, "color", Color(0,0,0,1), transTime);
+	tween.play();
+	await tween.finished
+	tween.stop()
 	if (fading):
 		if (fadedOut):
 			fadedOut = false;
@@ -81,9 +79,12 @@ func _on_tween_completed(_object, _key):
 		else:
 			fadedOut = true;
 			goto_scene(fadeScene);
-			var time = 0.3;
-			tweenNode.interpolate_property(fadeNode,"color", Color(0,0,0,1), Color(0,0,0,0), time, Tween.TRANS_LINEAR, Tween.EASE_OUT);
-			tweenNode.start();
+			tween.tween_property(fadeNode, "color", Color(0,0,0,0), transTime);
+			tween.play();
+			await tween.finished
+			tween.stop()
+			fading = false
+			fadedOut = false
 
 
 func goto_scene(path):
@@ -107,7 +108,7 @@ func _deferred_goto_scene(path):
 	var s = ResourceLoader.load(path); assert(ResourceLoader.exists(path) != false, "warpScene needs a valid filepath!");
 
 	# Instance the new scene.
-	currentScene = s.instance(); # if you get an error here, make sure the file path to the scene exists and hasn't been changed
+	currentScene = s.instantiate(); # if you get an error here, make sure the file path to the scene exists and hasn't been changed
 
 	# Add it to the active scene, as child of root.
 	get_tree().get_root().add_child(currentScene);
@@ -118,7 +119,7 @@ func _deferred_goto_scene(path):
 	# Get and set the path of the Position2D node in the scene to warp to
 	var posNode = get_tree().get_current_scene().get_node(posPath);
 	assert(posNode != null, "warpPos needs to be a child of the scene root node!");
-	assert(posNode.get_class() == "Position2D", "warpPos needs a Position2D!");
+	assert(posNode.get_class() == "Marker2D", "warpPos needs a Marker2D!");
 	
 	warpPos = posNode.get_global_position()
 	

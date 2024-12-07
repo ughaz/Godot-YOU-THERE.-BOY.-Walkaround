@@ -1,6 +1,6 @@
 extends Node
 
-export (NodePath) var ksBabbleAnimPlayer
+@export var ksBabbleAnimPlayer: NodePath
 
 func extraFunc():
 	if ksBabbleAnimPlayer:

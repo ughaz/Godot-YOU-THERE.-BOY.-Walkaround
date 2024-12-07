@@ -1,7 +1,7 @@
 extends InteractDialog
 class_name InteractExtra
 
-export(String, FILE, "*.tscn,*.scn") var warpScene
-export(String) var warpPos
-export(Texture) var zoomImage
-export(Resource) var extraFunc
+@export_file() var warpScene # (String, FILE, "*.tscn,*.scn")
+@export var warpPos: String
+@export var zoomImage: Texture2D
+@export var extraFunc: Resource

@@ -1,15 +1,15 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 #onready var spritePos:Vector2 = global_position
 var spritePos:Vector2
 var spriteFloat:float
 
-onready var animPlayer := $AnimationPlayer
+@onready var animPlayer := $AnimationPlayer
 
 
 func _ready() -> void:
 # warning-ignore:return_value_discarded
-	Signals.connect("trickster", self, "tricksterMode")
+	Signals.connect("trickster", Callable(self, "tricksterMode"))
 
 
 func _physics_process(_delta: float) -> void:

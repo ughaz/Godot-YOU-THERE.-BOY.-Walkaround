@@ -2,12 +2,12 @@ extends Control
 
 signal clicked
 
-onready var root = get_tree().get_root()
-onready var commandBox = self
-onready var commandContainer = get_node("MarginContainer/VBoxContainer")
+@onready var root = get_tree().get_root()
+@onready var commandBox = self
+@onready var commandContainer = get_node("MarginContainer/VBoxContainer")
 const label = preload("res://UI/Command Box/CommandLabel.tscn");
-var labelInstance:RichTextLabel = label.instance()
-onready var COMMAND_MARGIN = labelInstance.get("custom_styles/normal").get_margin(MARGIN_LEFT) * 2
+var labelInstance:RichTextLabel = label.instantiate()
+@onready var COMMAND_MARGIN = labelInstance.get("theme_override_styles/normal").content_margin_left * 2
 
 var dict:Dictionary = {"command": "", "dialog": """""", "warpScene": null, "warpPos": "", "zoomImage": null}
 var interactDialog:Array
@@ -22,14 +22,14 @@ var height:int;
 func _ready() -> void:
 	commandContainer.add_child(labelInstance)
 # warning-ignore:return_value_discarded
-	labelInstance.connect("command_clicked", self, "clicked")
+	labelInstance.connect("command_clicked", Callable(self, "clicked"))
 	call_deferred("check_interactable_dict", labelInstance)
 	if !multiCommand:
-		call_deferred("set_command", labelInstance)
+		call_deferred("set_meta_pressed", labelInstance)
 	else:
 		call_deferred("set_multicommand")
 
-func clicked():
+func emit_clicked():
 	emit_signal("clicked")
 
 func check_interactable_dict(instance):
@@ -37,13 +37,13 @@ func check_interactable_dict(instance):
 		if key in interactDialog[clicks]:
 			instance.set(key, interactDialog[clicks].get(key))
 
-func set_command(labelInst):
-	labelInst.set_bbcode("> " + labelInst.command)
-	lastWidth = labelInst.get_font("normal_font").get_string_size(labelInst.text).x + COMMAND_MARGIN
+func set_meta_pressed(labelInst):
+	labelInst.bbcode_text = ("> " + labelInst.command)
+	lastWidth = labelInst.get("theme_override_fonts/normal_font").get_string_size(labelInst.text).x + COMMAND_MARGIN
 	if width < lastWidth:
 		width = lastWidth
-		commandBox.rect_size.x = width
-	height = commandBox.rect_size.y
+		commandBox.size.x = width
+	height = commandBox.size.y
 	
 	var click;
 	if get_viewport():
@@ -54,18 +54,18 @@ func set_command(labelInst):
 	var viewportWidth = root.get_visible_rect().size.x
 	if (width > viewportWidth):
 		width = viewportWidth
-		commandBox.rect_size.x = width
+		commandBox.size.x = width
 	if (click.x + width > viewportWidth):
 		click.x = viewportWidth - width;
-	commandBox.rect_global_position = Vector2(click.x, click.y - 9); # the flash has a particular offset
+	commandBox.global_position = Vector2(click.x, click.y - 9); # the flash has a particular offset
 
 
 func set_multicommand():
+	commandContainer.get_child(0).queue_free()
 	for i in interactDialog:
-		yield(get_tree(), "idle_frame")
-		var lab  = label.instance()
+		var lab  = label.instantiate()
 		commandContainer.add_child(lab)
 		for key in dict:
 			if key in i:
 				lab.set(key, i.get(key))
-		call_deferred("set_command", lab)
+		call_deferred("set_meta_pressed", lab)

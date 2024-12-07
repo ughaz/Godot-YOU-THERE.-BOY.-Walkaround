@@ -1,6 +1,6 @@
 extends Node
 
-export (AudioStream) var hauntingRefrain
+@export var hauntingRefrain: AudioStream
 
 func extraFunc():
 	Global.audioNode.stream = hauntingRefrain

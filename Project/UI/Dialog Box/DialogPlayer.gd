@@ -1,14 +1,14 @@
 extends Control
 
-onready var label:RichTextLabel = get_node("CenterContainer/Body_NinePatchRect/MarginContainer/RichTextLabel");
-onready var animPlayer:AnimationPlayer = get_node("CenterContainer/Body_NinePatchRect/AnimationPlayer");
+@onready var label:RichTextLabel = get_node("CenterContainer/Body_NinePatchRect/MarginContainer/RichTextLabel");
+@onready var animPlayer:AnimationPlayer = get_node("CenterContainer/Body_NinePatchRect/AnimationPlayer");
 
 var dialog:String = "";
 var timer:int = 0;
 var animDone:bool = false
 
 func _ready():
-	label.set_percent_visible(0.0)
+	label.visible_ratio = 0.0
 	animPlayer.play("Open")
 	call_deferred("set_dialog")
 
@@ -23,14 +23,14 @@ func _process(_delta):
 		if Input.is_action_just_pressed("click"):
 			if (!Global.dialogDone):
 				timer = dialog.length();
-				label.set_percent_visible(1.0);
+				label.visible_ratio = 1.0
 			else:
-				label.set_percent_visible(0.0);
+				label.visible_ratio = 0.0
 				animPlayer.play_backwards("Open");
 				Global.dialogClosing = true;
 
 func set_dialog():
-	label.set_bbcode(dialog)
+	label.bbcode_text = dialog;
 
 func _on_animation_finished(_anim):
 	animDone = true

@@ -1,0 +1,210 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1733555462
+default_env.tres::Environment::-1::1733555443::0::1::::<><>::
+icon.png::CompressedTexture2D::5440862780712109349::1733555267::1733555465::1::::<><>::
+sburb_splash.png::CompressedTexture2D::8897043170128175477::1733555267::1733555465::1::::<><>::
+::res://addons/::1733555267
+::res://addons/imrp/::1733555267
+plugin.cfg::TextFile::-1::1733555267::0::1::::<><>::
+plugin.gd::GDScript::-1::1733555444::0::1::::<>EditorPlugin<>::
+README.md::TextFile::-1::1733555267::0::1::::<><>::
+::res://addons/imrp/icons/::1733555267
+Search.svg::CompressedTexture2D::8201491910779035264::1733555267::1733555466::1::::<><>::
+::res://addons/imrp/src/::1733555267
+::res://addons/imrp/src/scene/::1733555267
+ImprovedResourcePicker.gd::GDScript::-1::1733555444::0::1::::<>ConfirmationDialog<>::
+ImprovedResourcePicker.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://addons/imrp/icons/Search.svg<>res://addons/imrp/src/scene/ImprovedResourcePicker.gd<>res://addons/imrp/src/scene/Tree.gd
+Tree.gd::GDScript::-1::1733555444::0::1::::<>Tree<>::
+::res://addons/joystick/::1733555267
+README.md::TextFile::-1::1733555267::0::1::::<><>::
+virtual_joystick.gd::GDScript::-1::1733555444::0::1::::VirtualJoystick<>Control<>::
+virtual_joystick.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://addons/joystick/textures/joystick_base_outline.png<>res://addons/joystick/textures/joystick_tip_arrows.png<>res://addons/joystick/virtual_joystick.gd
+::res://addons/joystick/textures/::1733555267
+joystick_base_outline.png::CompressedTexture2D::8291641664006479970::1733555267::1733555466::1::::<><>::
+joystick_tip.png::CompressedTexture2D::6144951137656933279::1733555267::1733555466::1::::<><>::
+joystick_tip_arrows.png::CompressedTexture2D::6321758319212206164::1733555267::1733555466::1::::<><>::
+::res://Audio/::1733555266
+::res://Audio/Songs/::1733555266
+afterthought-showtime_piano.mp3::AudioStreamMP3::8843697562798565331::1733555266::1733555465::1::::<><>::
+mspa_harlequin.mp3::AudioStreamMP3::4661011068429201478::1733555266::1733555465::1::::<><>::
+wind.wav::AudioStreamWAV::7397745709930245843::1733555266::1733555466::1::::<><>::
+::res://Enemies/::1733555266
+Imp Harlequin.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://Enemies/impHarlequin1.png
+impHarlequin1.png::CompressedTexture2D::2985797977940826667::1733555266::1733555466::1::::<><>::
+::res://export/::1733555267
+::res://Kernelsprite/::1733555266
+kernelSprite1.png::CompressedTexture2D::3576851438596067182::1733555266::1733555465::1::::<><>::
+kernelSprite2.png::CompressedTexture2D::641586669060476882::1733555266::1733555465::1::::<><>::
+kernelSprite3.png::CompressedTexture2D::5999725998414436836::1733555266::1733555465::1::::<><>::
+Kernelsprite.gd::GDScript::-1::1733555444::0::1::::<>CharacterBody2D<>::
+Kernelsprite.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://Kernelsprite/kernelSprite1.png<>res://Kernelsprite/KS_Babble/kernelSpeech (4).png<>res://Kernelsprite/kernelSprite2.png<>res://Kernelsprite/kernelSprite3.png<>res://Kernelsprite/tricksterMode.png<>res://Kernelsprite/KS_Babble/kernelSpeech (3).png<>res://Kernelsprite/KS_Babble/kernelSpeech (7).png<>res://Kernelsprite/KS_Babble/kernelSpeech (1).png<>res://Kernelsprite/KS_Babble/kernelSpeech (9).png<>res://Kernelsprite/KS_Babble/kernelSpeech (8).png<>res://Kernelsprite/KS_Babble/kernelSpeech (2).png<>res://Kernelsprite/KS_Babble/kernelSpeech (5).png<>res://Kernelsprite/KS_Babble/kernelSpeech (6).png<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResource.gd<>res://Kernelsprite/Kernelsprite.gd<>res://Kernelsprite/KSExtraFunc.gd
+KSExtraFunc.gd::GDScript::-1::1733555444::0::1::::<>Node<>::
+tricksterMode.png::CompressedTexture2D::3002928933930253176::1733555266::1733555465::1::::<><>::
+tricksterMode.svg::CompressedTexture2D::4187768646225979828::1733555266::1733555465::1::::<><>::
+::res://Kernelsprite/KS_Babble/::1733555266
+kernelSpeech (1).png::CompressedTexture2D::5078165187169996575::1733555266::1733555465::1::::<><>::
+kernelSpeech (2).png::CompressedTexture2D::4015965959699344063::1733555266::1733555465::1::::<><>::
+kernelSpeech (3).png::CompressedTexture2D::867981769203616283::1733555266::1733555465::1::::<><>::
+kernelSpeech (4).png::CompressedTexture2D::3421996007981880666::1733555266::1733555465::1::::<><>::
+kernelSpeech (5).png::CompressedTexture2D::7560246621877757953::1733555266::1733555465::1::::<><>::
+kernelSpeech (6).png::CompressedTexture2D::2827954130062213953::1733555266::1733555465::1::::<><>::
+kernelSpeech (7).png::CompressedTexture2D::8949032019085659254::1733555266::1733555465::1::::<><>::
+kernelSpeech (8).png::CompressedTexture2D::5081241539663864540::1733555266::1733555465::1::::<><>::
+kernelSpeech (9).png::CompressedTexture2D::502410635513080476::1733555266::1733555465::1::::<><>::
+::res://Player/::1733555266
+johnWalk.png::CompressedTexture2D::3083805826565793751::1733555266::1733555465::1::::<><>::
+Player.gd::GDScript::-1::1733555444::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://Player/johnWalk.png<>res://Player/Player.gd<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResource.gd
+::res://Rooms/::1733555266
+::res://Rooms/Backyard/::1733555266
+backYard.png::CompressedTexture2D::7822457251622754105::1733555266::1733555466::1::::<><>::
+Backyard.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://Rooms/Backyard/backYard.png<>res://Rooms/Backyard/backyardTree.png<>res://Rooms/Backyard/whatPumpkin.png<>res://Rooms/Backyard/backyardPogo.png<>res://Rooms/Backyard/backyardSwing.png<>res://Player/Player.tscn<>res://Scripts/Room.gd<>res://Rooms/Backyard/sparks_4.png<>res://Rooms/Backyard/Rockwell-ExtraBold.otf<>res://Rooms/Backyard/backyardCables.png<>res://Rooms/Backyard/backyardGauge.png<>res://Scripts/CameraHotspot.gd<>res://Rooms/Backyard/sparks_2.png<>res://Rooms/Backyard/sparks_6.png<>res://Rooms/Backyard/sparks_3.png<>res://Rooms/Backyard/sparks_1.png<>res://Rooms/Backyard/sparks_8.png<>res://Rooms/Backyard/sparks_7.png<>res://Rooms/Backyard/sparks_9.png<>res://Audio/Songs/wind.wav<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Scripts/Interactable.gd<>res://Kernelsprite/Kernelsprite.tscn<>res://Scripts/Resources/InteractResource.gd<>res://Rooms/Backyard/TricksterHint.gd
+backyardCables.png::CompressedTexture2D::5730697711561516882::1733555266::1733555465::1::::<><>::
+backyardGauge.png::CompressedTexture2D::5914970646096767508::1733555266::1733555465::1::::<><>::
+backyardPogo.png::CompressedTexture2D::5263432362346499628::1733555266::1733555465::1::::<><>::
+backyardSwing.png::CompressedTexture2D::5434897856282617648::1733555266::1733555465::1::::<><>::
+backyardTree.png::CompressedTexture2D::7649952882834711542::1733555266::1733555465::1::::<><>::
+Rockwell-ExtraBold.otf::FontFile::1210657336187274361::1733555266::1733555465::1::::<><>::
+sparks_1.png::CompressedTexture2D::4923806151418758964::1733555266::1733555465::1::::<><>::
+sparks_2.png::CompressedTexture2D::4816339964941746890::1733555266::1733555465::1::::<><>::
+sparks_3.png::CompressedTexture2D::6727591219080561881::1733555266::1733555465::1::::<><>::
+sparks_4.png::CompressedTexture2D::3412694475951575745::1733555266::1733555466::1::::<><>::
+sparks_6.png::CompressedTexture2D::1031563012537098205::1733555266::1733555466::1::::<><>::
+sparks_7.png::CompressedTexture2D::419207702798929848::1733555266::1733555466::1::::<><>::
+sparks_8.png::CompressedTexture2D::5156449050436786088::1733555266::1733555466::1::::<><>::
+sparks_9.png::CompressedTexture2D::7020718471008910945::1733555266::1733555466::1::::<><>::
+TricksterHint.gd::GDScript::-1::1733555444::0::1::::<>RichTextLabel<>::
+whatPumpkin.png::CompressedTexture2D::7394074113969733822::1733555266::1733555466::1::::<><>::
+::res://Rooms/Balcony/::1733555266
+balcAlchemiter.png::CompressedTexture2D::7371411197278410232::1733555266::1733555466::1::::<><>::
+balcCruxite.png::CompressedTexture2D::4198643501483225701::1733555266::1733555466::1::::<><>::
+balcony.png::CompressedTexture2D::1984992686462993510::1733555266::1733555466::1::::<><>::
+Balcony.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://Player/Player.tscn<>res://Rooms/Balcony/balcony.png<>res://Rooms/Balcony/balcAlchemiter.png<>res://Rooms/Balcony/balcRail.png<>res://Scripts/Interactable.gd<>res://Scripts/Room.gd<>res://Audio/Songs/wind.wav<>res://Rooms/Balcony/balcCruxite.png<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Kernelsprite/Kernelsprite.tscn<>res://Scripts/Resources/InteractResource.gd
+balcRail.png::CompressedTexture2D::6136733140081910529::1733555266::1733555466::1::::<><>::
+::res://Rooms/Bathroom/::1733555266
+bathRoom.png::CompressedTexture2D::1558885806785230779::1733555266::1733555466::1::::<><>::
+Bathroom.tscn::PackedScene::-1::1733555444::0::1::::<><>::res://Rooms/Bathroom/bathRoom.png<>res://UI/arrow.png<>res://Rooms/Bathroom/bathTub.png<>res://Rooms/Bathroom/bathRug.png<>res://Rooms/Bathroom/bathToilet.png<>res://Player/Player.tscn<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Scripts/Interactable.gd<>res://Rooms/Zooms/bathroomYard.jpg<>res://Scripts/Resources/InteractResource.gd<>res://Scripts/CameraHotspot.gd
+bathRug.png::CompressedTexture2D::8062613842245714044::1733555266::1733555466::1::::<><>::
+bathToilet.png::CompressedTexture2D::5420988728602956346::1733555266::1733555466::1::::<><>::
+bathTub.png::CompressedTexture2D::6897752537694618342::1733555266::1733555466::1::::<><>::
+::res://Rooms/Hallway/::1733555266
+Hallway.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/Hallway/hallwayRoom.png<>res://UI/arrow.png<>res://Rooms/Hallway/hallwayPoster.png<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Scripts/Interactable.gd<>res://Player/Player.tscn<>res://Kernelsprite/Kernelsprite.tscn<>res://Scripts/Resources/InteractResource.gd
+hallwayPoster.png::CompressedTexture2D::7271877209973515309::1733555266::1733555466::1::::<><>::
+hallwayRoom.png::CompressedTexture2D::3803430041146204469::1733555266::1733555466::1::::<><>::
+::res://Rooms/John's Room/::1733555266
+John's Room.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/John's Room/room.png<>res://Rooms/John's Room/roomBed.png<>res://Player/Player.tscn<>res://Rooms/John's Room/roomDesk.png<>res://Rooms/John's Room/roomDresser.png<>res://Rooms/John's Room/roomPosters.png<>res://Rooms/John's Room/roomLathe.png<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResource.gd<>res://Scripts/Room.gd<>res://Rooms/John's Room/roomWiseguy.png<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Rooms/John's Room/roomConAir.png<>res://Rooms/John's Room/roomNotif.png<>res://Rooms/Zooms/roomSwing.jpg<>res://Rooms/Zooms/roomScreen.jpg<>res://Kernelsprite/Kernelsprite.tscn
+room.png::CompressedTexture2D::486227561030281469::1733555266::1733555466::1::::<><>::
+roomBed.png::CompressedTexture2D::257937022478330611::1733555266::1733555466::1::::<><>::
+roomConAir.png::CompressedTexture2D::7191030355318661287::1733555266::1733555466::1::::<><>::
+roomDesk.png::CompressedTexture2D::8116574895098593777::1733555266::1733555466::1::::<><>::
+roomDresser.png::CompressedTexture2D::3583496056689720782::1733555266::1733555466::1::::<><>::
+roomLathe.png::CompressedTexture2D::6168229358803800287::1733555266::1733555466::1::::<><>::
+roomNotif.png::CompressedTexture2D::1066603697417820261::1733555266::1733555466::1::::<><>::
+roomPosters1.png::CompressedTexture2D::3712641476186522803::1733555266::1733555466::1::::<><>::
+roomPosters2.png::CompressedTexture2D::2108894632569960642::1733555266::1733555466::1::::<><>::
+roomPosters.png::CompressedTexture2D::490028724800855698::1733555266::1733555466::1::::<><>::
+roomWiseguy.png::CompressedTexture2D::3642774013421342096::1733555266::1733555466::1::::<><>::
+::res://Rooms/Kitchen/::1733555266
+kitchBowl.png::CompressedTexture2D::6738863098788558355::1733555266::1733555466::1::::<><>::
+kitchCabinets.png::CompressedTexture2D::9192568691108671483::1733555266::1733555466::1::::<><>::
+kitchCounter.png::CompressedTexture2D::9159526716571466860::1733555266::1733555465::1::::<><>::
+Kitchen.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/Kitchen/kitchRoom.png<>res://Rooms/Kitchen/kitchCounter.png<>res://Rooms/Kitchen/kitchCabinets.png<>res://Rooms/Kitchen/kitchHutch.png<>res://Rooms/Kitchen/kitchFridge.png<>res://Rooms/Kitchen/kitchTable.png<>res://Rooms/Kitchen/kitchBowl.png<>res://Player/Player.tscn<>res://Rooms/Zooms/oil.jpg<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResource.gd<>res://UI/arrow.png<>res://Rooms/Zooms/kitchDrawing.jpg<>res://Kernelsprite/Kernelsprite.tscn
+kitchFridge.png::CompressedTexture2D::8330901563123181873::1733555266::1733555465::1::::<><>::
+kitchHutch.png::CompressedTexture2D::8903868349457318121::1733555266::1733555465::1::::<><>::
+kitchRoom.png::CompressedTexture2D::7509916472601887321::1733555266::1733555465::1::::<><>::
+kitchTable.png::CompressedTexture2D::7083127911271157480::1733555266::1733555465::1::::<><>::
+::res://Rooms/Living Room/::1733555266
+Living Room.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/Living Room/livingRoom.png<>res://Scripts/CameraHotspot.gd<>res://Rooms/Living Room/livingQuin1.png<>res://Rooms/Living Room/livingQuin5.png<>res://Rooms/Living Room/livingQuin3.png<>res://Rooms/Living Room/livingQuin2.png<>res://Rooms/Living Room/livingQuin4.png<>res://Rooms/Living Room/livingCouch.png<>res://Rooms/Living Room/livingCruxtruder.png<>res://Rooms/Living Room/livingFireplace.png<>res://Rooms/Living Room/livingLid.png<>res://Rooms/Living Room/livingHead.png<>res://Scripts/Room.gd<>res://Player/Player.tscn<>res://Scripts/Interactable.gd<>res://Rooms/Living Room/livingSteps.png<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Kernelsprite/Kernelsprite.tscn<>res://Scripts/Resources/InteractResource.gd
+livingCouch.png::CompressedTexture2D::6172768706154217404::1733555266::1733555465::1::::<><>::
+livingCruxtruder.png::CompressedTexture2D::8561552170076272714::1733555266::1733555465::1::::<><>::
+livingFireplace.png::CompressedTexture2D::8499319093196928425::1733555266::1733555465::1::::<><>::
+livingHead.png::CompressedTexture2D::2269598536295915045::1733555266::1733555465::1::::<><>::
+livingLid.png::CompressedTexture2D::5525702731657313391::1733555266::1733555465::1::::<><>::
+livingQuin1.png::CompressedTexture2D::7910551735583624394::1733555266::1733555465::1::::<><>::
+livingQuin2.png::CompressedTexture2D::4940405880039770085::1733555266::1733555465::1::::<><>::
+livingQuin3.png::CompressedTexture2D::4231351735387763548::1733555266::1733555465::1::::<><>::
+livingQuin4.png::CompressedTexture2D::6483533123389705303::1733555266::1733555465::1::::<><>::
+livingQuin5.png::CompressedTexture2D::6124199453656920744::1733555266::1733555465::1::::<><>::
+livingRoom.png::CompressedTexture2D::1851920906702844436::1733555266::1733555465::1::::<><>::
+livingSteps.png::CompressedTexture2D::3473330409346423453::1733555266::1733555465::1::::<><>::
+::res://Rooms/PS Office/::1733555266
+PS Office.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/PS Office/smallres/PSDesk.png<>res://Kernelsprite/Kernelsprite.tscn<>res://Rooms/Backyard/whatPumpkin.png<>res://Player/Player.tscn<>res://Rooms/PS Office/smallres/PSRoom.png<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResource.gd<>res://Scripts/Room.gd
+psDesk.png::CompressedTexture2D::1748611042423603847::1733555266::1733555465::1::::<><>::
+psOffice.png::CompressedTexture2D::6087740192750605445::1733555266::1733555465::1::::<><>::
+::res://Rooms/PS Office/smallres/::1733555266
+PSDesk.png::CompressedTexture2D::8470741947126638141::1733555266::1733555465::1::::<><>::
+PSRoom.png::CompressedTexture2D::1942163734946192676::1733555266::1733555465::1::::<><>::
+::res://Rooms/Study/::1733555266
+PianoExtraFunc.gd::GDScript::-1::1733555443::0::1::::<>Node<>::
+Study.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/Study/studyRoom.png<>res://Rooms/Study/studySafe.png<>res://Rooms/Study/studyDesk.png<>res://Rooms/Study/studyCards.png<>res://Rooms/Study/studyPiano.png<>res://Rooms/Study/studyPic2.png<>res://Rooms/Study/studyMural.png<>res://Rooms/Study/studyPic1.png<>res://Kernelsprite/Kernelsprite.tscn<>res://Player/Player.tscn<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Rooms/Zooms/studyRefrain.jpg<>res://Rooms/Study/PianoExtraFunc.gd<>res://Scripts/Resources/InteractResource.gd<>res://Audio/Songs/afterthought-showtime_piano.mp3<>res://Rooms/Zooms/studyView.jpg<>res://Rooms/Zooms/studyMagazine.jpg
+studyCards.png::CompressedTexture2D::7887996321823356255::1733555266::1733555465::1::::<><>::
+studyDesk.png::CompressedTexture2D::7081030426505008560::1733555266::1733555465::1::::<><>::
+studyMural.png::CompressedTexture2D::1955749387770640423::1733555266::1733555465::1::::<><>::
+studyPiano.png::CompressedTexture2D::7742419758294424405::1733555266::1733555465::1::::<><>::
+studyPic1.png::CompressedTexture2D::1436080800688885317::1733555266::1733555465::1::::<><>::
+studyPic2.png::CompressedTexture2D::4506997419032323453::1733555266::1733555465::1::::<><>::
+studyRoom.png::CompressedTexture2D::1384063073202672222::1733555266::1733555465::1::::<><>::
+studySafe.png::CompressedTexture2D::7441702933843417331::1733555266::1733555465::1::::<><>::
+::res://Rooms/Utility Room/::1733555266
+Utility Room.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://Rooms/Utility Room/utilShelves.png<>res://Rooms/Utility Room/utilWasher.png<>res://Rooms/Utility Room/utilRoom.png<>res://Player/Player.tscn<>res://UI/arrow.png<>res://Scripts/Resources/InteractResourceExtra.gd<>res://Scripts/Interactable.gd<>res://Scripts/Resources/InteractResource.gd<>res://Kernelsprite/Kernelsprite.tscn<>res://Scripts/Room.gd
+utilRoom.png::CompressedTexture2D::2093012032431663181::1733555266::1733555465::1::::<><>::
+utilShelves.png::CompressedTexture2D::8124178860448830193::1733555266::1733555465::1::::<><>::
+utilWasher.png::CompressedTexture2D::7553827286668930986::1733555266::1733555465::1::::<><>::
+::res://Rooms/Zooms/::1733555266
+bathroomYard.jpg::CompressedTexture2D::5939915712752673698::1733555266::1733555465::1::::<><>::
+kitchDrawing.jpg::CompressedTexture2D::7918892653024468266::1733555266::1733555465::1::::<><>::
+oil.jpg::CompressedTexture2D::6073473541816038847::1733555266::1733555465::1::::<><>::
+roomScreen.jpg::CompressedTexture2D::706671817553221073::1733555266::1733555465::1::::<><>::
+roomSwing.jpg::CompressedTexture2D::5707283055183768284::1733555266::1733555465::1::::<><>::
+studyMagazine.jpg::CompressedTexture2D::705855125756719560::1733555266::1733555465::1::::<><>::
+studyRefrain.jpg::CompressedTexture2D::365746324225491970::1733555266::1733555465::1::::<><>::
+studyView.jpg::CompressedTexture2D::387060629800055440::1733555266::1733555465::1::::<><>::
+::res://Scripts/::1733555266
+CameraHotspot.gd::GDScript::-1::1733555443::0::1::::<>Area2D<>::
+Global.gd::GDScript::-1::1733555443::0::1::::<>Node<>::
+Interactable.gd::GDScript::-1::1733555443::0::1::::<>Area2D<>::
+Room.gd::GDScript::-1::1733555443::0::1::::<>Node2D<>::
+Signals.gd::GDScript::-1::1733555443::0::1::::<>Node<>::
+::res://Scripts/Resources/::1733555266
+InteractResource.gd::GDScript::-1::1733555443::0::1::::InteractDialog<>Resource<>::
+InteractResourceExtra.gd::GDScript::-1::1733555443::0::1::::InteractExtra<>InteractDialog<>::
+::res://UI/::1733555267
+arrow.png::CompressedTexture2D::4555152165223630301::1733555267::1733555465::1::::<><>::
+cursor.png::CompressedTexture2D::4496831947543020422::1733555267::1733555465::1::::<><>::
+cursor_select.png::CompressedTexture2D::7754645634219763644::1733555267::1733555465::1::::<><>::
+UI.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Controls/Controls.tscn<>res://UI/Audio/Audio.tscn<>res://addons/joystick/virtual_joystick.tscn
+::res://UI/Audio/::1733555266
+Audio.gd::GDScript::-1::1733555443::0::1::::<>TextureButton<>::
+Audio.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Audio/audio_on.png<>res://UI/Audio/Audio.gd<>res://UI/Audio/audio_mute.png
+audio_mute.png::CompressedTexture2D::2112890329034408331::1733555266::1733555465::1::::<><>::
+audio_on.png::CompressedTexture2D::1316327266250398874::1733555266::1733555465::1::::<><>::
+::res://UI/Command Box/::1733555266
+9patchrect_command.png::CompressedTexture2D::7164495867788266837::1733555266::1733555465::1::::<><>::
+CommandLabel.gd::GDScript::-1::1733555443::0::1::::<>RichTextLabel<>::
+CommandLabel.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Dialog Box/courbd.ttf<>res://UI/Command Box/CommandLabel.gd
+CommandPlayer.gd::GDScript::-1::1733555443::0::1::::<>Control<>::
+CommandPlayer.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Command Box/9patchrect_command.png<>res://UI/Command Box/CommandPlayer.gd
+::res://UI/Controls/::1733555266
+clickThis.png::CompressedTexture2D::1216323484745230052::1733555266::1733555465::1::::<><>::
+Controls.gd::GDScript::-1::1733555443::0::1::::<>TextureButton<>::
+controls.png::CompressedTexture2D::106435289163055960::1733555266::1733555465::1::::<><>::
+Controls.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Controls/Controls.gd<>res://UI/Controls/controls.png
+::res://UI/Dialog Box/::1733555267
+9patch_dialog.png::CompressedTexture2D::1417020118105261828::1733555266::1733555465::1::::<><>::
+courbd.ttf::FontFile::289262194879779792::1733555267::1733555465::1::::<><>::
+DialogPlayer.gd::GDScript::-1::1733555443::0::1::::<>Control<>::
+DialogPlayer.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Dialog Box/9patch_dialog.png<>res://UI/Dialog Box/courbd.ttf<>res://UI/Dialog Box/DialogPlayer.gd
+::res://UI/Health Vial/::1733555267
+Health Vial.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Health Vial/health_bar.png<>res://UI/Health Vial/health_viscosity.png<>res://UI/Health Vial/health_vial.png
+health_bar.png::CompressedTexture2D::6812220192133362760::1733555267::1733555465::1::::<><>::
+health_text.png::CompressedTexture2D::8465059698410330402::1733555267::1733555465::1::::<><>::
+health_vial.png::CompressedTexture2D::8505861143558523398::1733555267::1733555465::1::::<><>::
+health_vialbg.png::CompressedTexture2D::5542095436968156896::1733555267::1733555465::1::::<><>::
+health_viscosity.png::CompressedTexture2D::3004807318898439077::1733555267::1733555465::1::::<><>::
+mangrit_text.png::CompressedTexture2D::8588334440310875384::1733555267::1733555465::1::::<><>::
+::res://UI/Trickster Mode/::1733555267
+TricksterCode.gd::GDScript::-1::1733555443::0::1::::<>Control<>::
+TricksterCode.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Dialog Box/courbd.ttf<>res://UI/Trickster Mode/TricksterCode.gd<>res://ui/Dialog Box/9patch_dialog.png
+::res://UI/Zoom Image/::1733555267
+ZoomImage.gd::GDScript::-1::1733555443::0::1::::<>Control<>::
+ZoomImage.tscn::PackedScene::-1::1733555443::0::1::::<><>::res://UI/Zoom Image/ZoomImage.gd

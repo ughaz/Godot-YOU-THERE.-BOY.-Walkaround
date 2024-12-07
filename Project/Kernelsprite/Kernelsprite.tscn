@@ -1,75 +1,122 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=3 uid="uid://yfxmb0venkj5"]
 
-[ext_resource path="res://Kernelsprite/kernelSprite1.png" type="Texture" id=1]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (4).png" type="Texture" id=2]
-[ext_resource path="res://Kernelsprite/kernelSprite2.png" type="Texture" id=3]
-[ext_resource path="res://Kernelsprite/kernelSprite3.png" type="Texture" id=4]
-[ext_resource path="res://Kernelsprite/tricksterMode.png" type="Texture" id=5]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (3).png" type="Texture" id=6]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (7).png" type="Texture" id=7]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (1).png" type="Texture" id=8]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (9).png" type="Texture" id=9]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (8).png" type="Texture" id=10]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (2).png" type="Texture" id=11]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (5).png" type="Texture" id=12]
-[ext_resource path="res://Kernelsprite/KS_Babble/kernelSpeech (6).png" type="Texture" id=13]
-[ext_resource path="res://Scripts/Interactable.gd" type="Script" id=14]
-[ext_resource path="res://Scripts/Resources/InteractResource.gd" type="Script" id=15]
-[ext_resource path="res://Kernelsprite/Kernelsprite.gd" type="Script" id=16]
-[ext_resource path="res://Kernelsprite/KSExtraFunc.gd" type="Script" id=17]
+[ext_resource type="Texture2D" uid="uid://bq7whra265u75" path="res://Kernelsprite/kernelSprite1.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bo0v1lc0yueak" path="res://Kernelsprite/KS_Babble/kernelSpeech (4).png" id="2"]
+[ext_resource type="Texture2D" uid="uid://je13rsmi86rm" path="res://Kernelsprite/kernelSprite2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://crqku046orhng" path="res://Kernelsprite/kernelSprite3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bi1v2hy8eiv1q" path="res://Kernelsprite/tricksterMode.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://mmpsecc7cdfv" path="res://Kernelsprite/KS_Babble/kernelSpeech (3).png" id="6"]
+[ext_resource type="Texture2D" uid="uid://d0q8iq4prwlv7" path="res://Kernelsprite/KS_Babble/kernelSpeech (7).png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cel5vylupaeod" path="res://Kernelsprite/KS_Babble/kernelSpeech (1).png" id="8"]
+[ext_resource type="Texture2D" uid="uid://hfmvoaiaywlo" path="res://Kernelsprite/KS_Babble/kernelSpeech (9).png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cennknqmjby8c" path="res://Kernelsprite/KS_Babble/kernelSpeech (8).png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bxhmmw0ksunnr" path="res://Kernelsprite/KS_Babble/kernelSpeech (2).png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dfyifl3m645yb" path="res://Kernelsprite/KS_Babble/kernelSpeech (5).png" id="12"]
+[ext_resource type="Texture2D" uid="uid://bgj48yaerk54p" path="res://Kernelsprite/KS_Babble/kernelSpeech (6).png" id="13"]
+[ext_resource type="Script" path="res://Scripts/Interactable.gd" id="14"]
+[ext_resource type="Script" path="res://Scripts/Resources/InteractResource.gd" id="15"]
+[ext_resource type="Script" path="res://Kernelsprite/Kernelsprite.gd" id="16"]
+[ext_resource type="Script" path="res://Kernelsprite/KSExtraFunc.gd" id="17"]
 
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 3 ) ],
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}],
 "loop": true,
-"name": "idle",
+"name": &"idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}],
 "loop": true,
-"name": "tricksterMode",
+"name": &"tricksterMode",
 "speed": 5.0
-} ]
+}]
 
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 9 ) ],
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
 "loop": false,
-"name": "default",
+"name": &"default",
 "speed": 20.0
-} ]
+}]
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id="9"]
 resource_name = "babble"
 length = 1.5
 step = 0.05
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ true, false ]
+"values": [true, false]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ 0 ]
+"values": [0]
 }
 
-[sub_resource type="Resource" id=3]
-script = ExtResource( 15 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0l45x"]
+_data = {
+"babble": SubResource("9")
+}
+
+[sub_resource type="Resource" id="3"]
+script = ExtResource("15")
 command = "WHAT'S THAT"
 dialog = "It looks different now.
 
@@ -77,249 +124,253 @@ After you bit that APPLE, your whole house seemed to be trasported somewhere. Th
 
 You still can't understand a word this idiot says."
 
-[sub_resource type="Resource" id=4]
-script = ExtResource( 15 )
+[sub_resource type="Resource" id="4"]
+script = ExtResource("15")
 command = "THE GHOST CLOWN. DO SOMETHING WITH IT."
 dialog = "The 'GHOST CLOWN' is called the KERNELSPRITE! Or, rather just the SPRITE now, I suppose.
 
 You can't 'DO SOMETHING' with it at the moment! The only thing you can theoretically do with it is TIER 2 PROTOTYPE IT, assuming that's still possible..."
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 15 )
+[sub_resource type="Resource" id="5"]
+script = ExtResource("15")
 command = "TIER PROTO TYPE THE SPRITE, OR THE THING YOU SAID. DO IT."
 dialog = "You are not the one who is supposed to prototype it! The SBURB SERVER USER is supposed to do that."
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id="7"]
 length = 0.001
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("KernelInteractable/KernelSprite1:polygon")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ PoolVector2Array( 111, 1.2, 115, 9, 111.4, 15, 95, 34.2, 90, 51.3, 91, 64, 112.2, 51, 133.5, 51, 140, 57, 142, 70.5, 119, 87.5, 115.6, 102.3, 121, 110, 122, 121, 110.7, 133.3, 124, 141, 136, 156, 151, 190, 159, 190, 164, 193.9, 164, 212.4, 161, 231, 156, 243.3, 158, 253, 156, 259, 148, 270.8, 148, 289, 144, 292, 139, 290.3, 138.4, 294.1, 140.7, 298, 151, 300, 164.1, 290, 177, 291, 181, 294, 186, 308, 190, 313, 203, 311, 200, 319, 192, 324, 184, 325, 173, 319, 166, 317, 138, 330, 115, 331, 93, 326.6, 79, 316.7, 74, 305, 73, 292, 80.5, 248.8, 72.5, 207.7, 43, 201.4, 34, 190, 27, 169, 27, 132, 21, 122.2, 21, 111, 28, 104, 28, 92.4, 21.4, 83, 16.6, 83, 6, 86, 0, 81, 0, 70.2, 7, 58, 19.8, 51, 34.4, 51, 46, 55, 63.1, 20, 80.8, 4, 93, 0 ) ]
+"values": [PackedVector2Array(111, 1.2, 115, 9, 111.4, 15, 95, 34.2, 90, 51.3, 91, 64, 112.2, 51, 133.5, 51, 140, 57, 142, 70.5, 119, 87.5, 115.6, 102.3, 121, 110, 122, 121, 110.7, 133.3, 124, 141, 136, 156, 151, 190, 159, 190, 164, 193.9, 164, 212.4, 161, 231, 156, 243.3, 158, 253, 156, 259, 148, 270.8, 148, 289, 144, 292, 139, 290.3, 138.4, 294.1, 140.7, 298, 151, 300, 164.1, 290, 177, 291, 181, 294, 186, 308, 190, 313, 203, 311, 200, 319, 192, 324, 184, 325, 173, 319, 166, 317, 138, 330, 115, 331, 93, 326.6, 79, 316.7, 74, 305, 73, 292, 80.5, 248.8, 72.5, 207.7, 43, 201.4, 34, 190, 27, 169, 27, 132, 21, 122.2, 21, 111, 28, 104, 28, 92.4, 21.4, 83, 16.6, 83, 6, 86, 0, 81, 0, 70.2, 7, 58, 19.8, 51, 34.4, 51, 46, 55, 63.1, 20, 80.8, 4, 93, 0)]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("KernelInteractable/KernelSprite1:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath("KernelInteractable/TricksterMode1:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ true ]
+"values": [true]
 }
 tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/path = NodePath("KernelInteractable/TricksterMode2:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ true ]
+"values": [true]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id="6"]
 resource_name = "idle"
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite:playing")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("KernelInteractable/KernelSprite1:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath("KernelInteractable/TricksterMode1:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/path = NodePath("KernelInteractable/TricksterMode2:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("AnimatedSprite:animation")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
+tracks/4/path = NodePath("AnimatedSprite2D:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ "idle" ]
+"values": ["idle"]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id="8"]
 resource_name = "tricksterMode"
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ "tricksterMode" ]
+"values": ["tricksterMode"]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("AnimatedSprite:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath("KernelInteractable/KernelSprite1:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/path = NodePath("KernelInteractable/TricksterMode1:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/path = NodePath("KernelInteractable/TricksterMode2:disabled")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 
-[node name="Kernelsprite" type="KinematicBody2D"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bvxu2"]
+_data = {
+"RESET": SubResource("7"),
+"idle": SubResource("6"),
+"tricksterMode": SubResource("8")
+}
+
+[node name="Kernelsprite" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 0
-script = ExtResource( 16 )
+script = ExtResource("16")
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -136 )
-frames = SubResource( 1 )
-animation = "idle"
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -136)
+sprite_frames = SubResource("1")
+animation = &"idle"
 
-[node name="KS_Babble" type="AnimatedSprite" parent="."]
+[node name="KS_Babble" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2( -282, -221 )
-frames = SubResource( 2 )
+position = Vector2(-282, -221)
+sprite_frames = SubResource("2")
 frame = 8
-playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KS_Babble"]
-anims/babble = SubResource( 9 )
+libraries = {
+"": SubResource("AnimationLibrary_0l45x")
+}
 
 [node name="KernelInteractable" type="Area2D" parent="."]
-script = ExtResource( 14 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
-interactDialog = [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ]
+script = ExtResource("14")
+interactDialog = [SubResource("3"), SubResource("4"), SubResource("5")]
 extraFunc = NodePath("../KSExtraFunc")
 
 [node name="KernelSprite1" type="CollisionPolygon2D" parent="KernelInteractable"]
 visible = false
-position = Vector2( -102, -303 )
-polygon = PoolVector2Array( 111, 1.2, 115, 9, 111.4, 15, 95, 34.2, 90, 51.3, 91, 64, 112.2, 51, 133.5, 51, 140, 57, 142, 70.5, 119, 87.5, 115.6, 102.3, 121, 110, 122, 121, 110.7, 133.3, 124, 141, 136, 156, 151, 190, 159, 190, 164, 193.9, 164, 212.4, 161, 231, 156, 243.3, 158, 253, 156, 259, 148, 270.8, 148, 289, 144, 292, 139, 290.3, 138.4, 294.1, 140.7, 298, 151, 300, 164.1, 290, 177, 291, 181, 294, 186, 308, 190, 313, 203, 311, 200, 319, 192, 324, 184, 325, 173, 319, 166, 317, 138, 330, 115, 331, 93, 326.6, 79, 316.7, 74, 305, 73, 292, 80.5, 248.8, 72.5, 207.7, 43, 201.4, 34, 190, 27, 169, 27, 132, 21, 122.2, 21, 111, 28, 104, 28, 92.4, 21.4, 83, 16.6, 83, 6, 86, 0, 81, 0, 70.2, 7, 58, 19.8, 51, 34.4, 51, 46, 55, 63.1, 20, 80.8, 4, 93, 0 )
+position = Vector2(-102, -303)
+polygon = PackedVector2Array(111, 1.2, 115, 9, 111.4, 15, 95, 34.2, 90, 51.3, 91, 64, 112.2, 51, 133.5, 51, 140, 57, 142, 70.5, 119, 87.5, 115.6, 102.3, 121, 110, 122, 121, 110.7, 133.3, 124, 141, 136, 156, 151, 190, 159, 190, 164, 193.9, 164, 212.4, 161, 231, 156, 243.3, 158, 253, 156, 259, 148, 270.8, 148, 289, 144, 292, 139, 290.3, 138.4, 294.1, 140.7, 298, 151, 300, 164.1, 290, 177, 291, 181, 294, 186, 308, 190, 313, 203, 311, 200, 319, 192, 324, 184, 325, 173, 319, 166, 317, 138, 330, 115, 331, 93, 326.6, 79, 316.7, 74, 305, 73, 292, 80.5, 248.8, 72.5, 207.7, 43, 201.4, 34, 190, 27, 169, 27, 132, 21, 122.2, 21, 111, 28, 104, 28, 92.4, 21.4, 83, 16.6, 83, 6, 86, 0, 81, 0, 70.2, 7, 58, 19.8, 51, 34.4, 51, 46, 55, 63.1, 20, 80.8, 4, 93, 0)
 
 [node name="TricksterMode1" type="CollisionPolygon2D" parent="KernelInteractable"]
 visible = false
-position = Vector2( -102, -303 )
-polygon = PoolVector2Array( -35, 72, -16, 87, -5, 116, -7, 175, -16, 192, -20, 212, -38, 236, -53, 246, -77, 244, -91, 235, -113, 203, -113, 185, -123, 168, -125, 146, -122, 145, -124, 119, -120, 99, -107, 83, -84, 70, -75, 68, -51, 68 )
+position = Vector2(-102, -303)
+polygon = PackedVector2Array(-35, 72, -16, 87, -5, 116, -7, 175, -16, 192, -20, 212, -38, 236, -53, 246, -77, 244, -91, 235, -113, 203, -113, 185, -123, 168, -125, 146, -122, 145, -124, 119, -120, 99, -107, 83, -84, 70, -75, 68, -51, 68)
 disabled = true
 
 [node name="TricksterMode2" type="CollisionPolygon2D" parent="KernelInteractable"]
 visible = false
-position = Vector2( -102, -303 )
-polygon = PoolVector2Array( 182, 99, 182, 116, 158, 132, 161, 138, 184, 123, 206, 162, 198, 187, 196, 248, 197, 269, 229, 280, 283, 275, 287, 266, 273, 257, 281, 252, 275, 179, 298, 167, 309, 152, 319, 154, 319, 135, 311, 130, 317, 127, 314, 120, 328, 98, 309, 100, 307, 94, 294, 82, 287, 79, 299, 57, 287, 54, 258, 55, 229, 64, 213, 64, 198, 67 )
+position = Vector2(-102, -303)
+polygon = PackedVector2Array(182, 99, 182, 116, 158, 132, 161, 138, 184, 123, 206, 162, 198, 187, 196, 248, 197, 269, 229, 280, 283, 275, 287, 266, 273, 257, 281, 252, 275, 179, 298, 167, 309, 152, 319, 154, 319, 135, 311, 130, 317, 127, 314, 120, 328, 98, 309, 100, 307, 94, 294, 82, 287, 79, 299, 57, 287, 54, 258, 55, 229, 64, 213, 64, 198, 67)
 disabled = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bvxu2")
+}
 autoplay = "idle"
-anims/RESET = SubResource( 7 )
-anims/idle = SubResource( 6 )
-anims/tricksterMode = SubResource( 8 )
 
 [node name="KSExtraFunc" type="Node" parent="."]
-script = ExtResource( 17 )
+script = ExtResource("17")
 ksBabbleAnimPlayer = NodePath("../KS_Babble/AnimationPlayer")
