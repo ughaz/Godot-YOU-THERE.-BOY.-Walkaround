@@ -19,6 +19,7 @@ func _process(_delta):
 			label.visible_characters = timer;
 		elif (!Global.dialogDone):
 			Global.dialogDone = true;
+			print(label.get_visible_line_count())
 			
 		if Input.is_action_just_pressed("click"):
 			if (!Global.dialogDone):

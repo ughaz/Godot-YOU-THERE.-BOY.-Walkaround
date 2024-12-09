@@ -1,81 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://smtjqca7tewu"]
+[gd_scene load_steps=7 format=3 uid="uid://smtjqca7tewu"]
 
 [ext_resource type="Texture2D" uid="uid://ugod5fcsjetg" path="res://UI/Dialog Box/9patch_dialog.png" id="1"]
 [ext_resource type="FontFile" uid="uid://eeeduvxejskm" path="res://UI/Dialog Box/courbd.ttf" id="2"]
 [ext_resource type="Script" path="res://UI/Dialog Box/DialogPlayer.gd" id="3"]
-
-[sub_resource type="FontFile" id="1"]
-fallbacks = Array[Font]([ExtResource("2")])
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/2/0/ascent = 0.0
-cache/0/2/0/descent = 0.0
-cache/0/2/0/underline_position = 0.0
-cache/0/2/0/underline_thickness = 0.0
-cache/0/2/0/scale = 1.0
-cache/0/3/0/ascent = 0.0
-cache/0/3/0/descent = 0.0
-cache/0/3/0/underline_position = 0.0
-cache/0/3/0/underline_thickness = 0.0
-cache/0/3/0/scale = 1.0
-cache/0/4/0/ascent = 0.0
-cache/0/4/0/descent = 0.0
-cache/0/4/0/underline_position = 0.0
-cache/0/4/0/underline_thickness = 0.0
-cache/0/4/0/scale = 1.0
-cache/0/5/0/ascent = 0.0
-cache/0/5/0/descent = 0.0
-cache/0/5/0/underline_position = 0.0
-cache/0/5/0/underline_thickness = 0.0
-cache/0/5/0/scale = 1.0
-cache/0/6/0/ascent = 0.0
-cache/0/6/0/descent = 0.0
-cache/0/6/0/underline_position = 0.0
-cache/0/6/0/underline_thickness = 0.0
-cache/0/6/0/scale = 1.0
-cache/0/7/0/ascent = 0.0
-cache/0/7/0/descent = 0.0
-cache/0/7/0/underline_position = 0.0
-cache/0/7/0/underline_thickness = 0.0
-cache/0/7/0/scale = 1.0
-cache/0/8/0/ascent = 0.0
-cache/0/8/0/descent = 0.0
-cache/0/8/0/underline_position = 0.0
-cache/0/8/0/underline_thickness = 0.0
-cache/0/8/0/scale = 1.0
-cache/0/9/0/ascent = 0.0
-cache/0/9/0/descent = 0.0
-cache/0/9/0/underline_position = 0.0
-cache/0/9/0/underline_thickness = 0.0
-cache/0/9/0/scale = 1.0
-cache/0/10/0/ascent = 0.0
-cache/0/10/0/descent = 0.0
-cache/0/10/0/underline_position = 0.0
-cache/0/10/0/underline_thickness = 0.0
-cache/0/10/0/scale = 1.0
-cache/0/11/0/ascent = 0.0
-cache/0/11/0/descent = 0.0
-cache/0/11/0/underline_position = 0.0
-cache/0/11/0/underline_thickness = 0.0
-cache/0/11/0/scale = 1.0
-cache/0/12/0/ascent = 0.0
-cache/0/12/0/descent = 0.0
-cache/0/12/0/underline_position = 0.0
-cache/0/12/0/underline_thickness = 0.0
-cache/0/12/0/scale = 1.0
-cache/0/13/0/ascent = 0.0
-cache/0/13/0/descent = 0.0
-cache/0/13/0/underline_position = 0.0
-cache/0/13/0/underline_thickness = 0.0
-cache/0/13/0/scale = 1.0
-cache/0/14/0/ascent = 0.0
-cache/0/14/0/descent = 0.0
-cache/0/14/0/underline_position = 0.0
-cache/0/14/0/underline_thickness = 0.0
-cache/0/14/0/scale = 1.0
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Open"
@@ -120,6 +47,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("3")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -158,7 +87,7 @@ offset_bottom = -24.0
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = SubResource("1")
+theme_override_fonts/normal_font = ExtResource("2")
 theme_override_font_sizes/normal_font_size = 14
 bbcode_enabled = true
 scroll_active = false
