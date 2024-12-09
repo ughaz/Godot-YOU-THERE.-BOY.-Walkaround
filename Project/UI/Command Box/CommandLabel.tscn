@@ -13,6 +13,21 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
 
 [sub_resource type="StyleBoxEmpty" id="2"]
 content_margin_left = 15.0
@@ -26,10 +41,12 @@ offset_bottom = 18.0
 mouse_filter = 1
 mouse_default_cursor_shape = 2
 theme_override_fonts/normal_font = SubResource("1")
+theme_override_font_sizes/normal_font_size = 14
 theme_override_styles/normal = SubResource("2")
 bbcode_enabled = true
 text = "> "
 scroll_active = false
+visible_characters_behavior = 1
 script = ExtResource("2")
 
 [connection signal="gui_input" from="." to="." method="_on_CommandLabel_gui_input"]

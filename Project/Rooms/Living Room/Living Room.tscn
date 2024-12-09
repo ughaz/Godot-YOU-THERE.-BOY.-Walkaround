@@ -328,7 +328,7 @@ polygon = PackedVector2Array(-37, 19, -25, 25, -13, 28, 8, 29, 23, 25, 34, 19, 3
 [node name="BalconySteps" type="Area2D" parent="Node2D" node_paths=PackedStringArray("snapTo")]
 position = Vector2(-58, -406)
 script = ExtResource("2")
-snapTo = NodePath("../../FromBalconyPos")
+snapTo = NodePath("Marker2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/BalconySteps"]
 position = Vector2(0, -40)

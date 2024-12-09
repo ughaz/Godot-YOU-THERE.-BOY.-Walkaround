@@ -51,9 +51,11 @@ position = Vector2(392, -35)
 texture = ExtResource("2")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="balcony"]
+visible = false
 polygon = PackedVector2Array(1080, 184, 351, 538, -352, 216, -280, 181, -229, 204, -50, 116, -5, -776, -715, -795, -726, 889, 1480, 935, 1484, 93)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="balcony"]
+visible = false
 polygon = PackedVector2Array(-50, 116, 56, 114, 360, -66, 818, 71, 1116, 207, 1549, 108, 1466, -753, 530, -802, -31, -802)
 
 [node name="LivingRoomDoor" type="Area2D" parent="."]
@@ -117,6 +119,7 @@ interactDialog = [SubResource("5")]
 texture = ExtResource("4")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RailInteractable"]
+visible = false
 polygon = PackedVector2Array(750, -247, 750, -238, 696.5, -210.8, 696.5, -114.8, 729, -130, 750, -119, 750, -109, -11.9, 258, -363, 95, -373.5, 78.2, -387, 85, -752, -82, -752, -92, -731, -103, -716, -97, -716, -193, -752, -210, -752, -220, -730, -231, -19.1, 98, -8.90002, 100.4, 729, -258)
 
 [node name="Camera2D" type="Camera2D" parent="."]

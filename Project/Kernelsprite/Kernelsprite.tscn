@@ -331,12 +331,12 @@ script = ExtResource("16")
 position = Vector2(0, -136)
 sprite_frames = SubResource("1")
 animation = &"idle"
+autoplay = "idle"
 
 [node name="KS_Babble" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(-282, -221)
 sprite_frames = SubResource("2")
-frame = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KS_Babble"]
 libraries = {

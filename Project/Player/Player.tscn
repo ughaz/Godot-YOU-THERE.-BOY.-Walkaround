@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/Resources/InteractResource.gd" id="4"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
-height = 66.0
+height = 90.0
 
 [sub_resource type="Animation" id="2"]
 resource_name = "runBack"

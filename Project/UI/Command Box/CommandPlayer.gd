@@ -39,7 +39,7 @@ func check_interactable_dict(instance):
 
 func set_meta_pressed(labelInst):
 	labelInst.bbcode_text = ("> " + labelInst.command)
-	lastWidth = labelInst.get("theme_override_fonts/normal_font").get_string_size(labelInst.text).x + COMMAND_MARGIN
+	lastWidth = labelInst.get("theme_override_fonts/normal_font").get_string_size(labelInst.text,HORIZONTAL_ALIGNMENT_LEFT, -1,labelInst.get("theme_override_font_sizes/normal_font_size")).x + COMMAND_MARGIN
 	if width < lastWidth:
 		width = lastWidth
 		commandBox.size.x = width

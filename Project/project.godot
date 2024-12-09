@@ -13,6 +13,7 @@ config_version=5
 config/name="YOU THERE. BOY."
 run/main_scene="res://Rooms/Balcony/Balcony.tscn"
 config/features=PackedStringArray("4.3")
+run/max_fps=25
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://sburb_splash.png"
 boot_splash/fullsize=false
@@ -25,21 +26,16 @@ Signals="*res://Scripts/Signals.gd"
 Global="*res://Scripts/Global.gd"
 Ui="*res://UI/UI.tscn"
 
-[debug]
-
-settings/fps/force_fps=25
-
 [display]
 
 window/size/viewport_width=650
 window/size/viewport_height=450
 window/size/window_width_override=650
 window/size/window_height_override=450
+window/stretch/scale_mode="integer"
+window/dpi/allow_hidpi=false
+window/ios/allow_high_refresh_rate=false
 mouse_cursor/custom_image="res://UI/cursor.png"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/imrp/plugin.cfg")
 
 [importer_defaults]
 
@@ -122,10 +118,12 @@ trickster_mode={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(1, 1, 1, 1)
+2d/snap/snap_2d_transforms_to_pixel=true
 environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
-2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
 batching/precision/uv_contract=true
 quality/2d/use_pixel_snap=true
