@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var interactDialog = [Resource] # be sure to load in InteractDialog or InteractExtra # (Array, Resource)
+@export var interactDialog:Array[InteractDialog]
 @export var multiCommand: bool = false
 @export var extraFunc: NodePath
 
