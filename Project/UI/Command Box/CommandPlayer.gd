@@ -22,10 +22,10 @@ var height:int;
 func _ready() -> void:
 	commandContainer.add_child(labelInstance)
 # warning-ignore:return_value_discarded
-	labelInstance.connect("command_clicked", Callable(self, "clicked"))
+	labelInstance.connect("command_clicked", emit_clicked)
 	call_deferred("check_interactable_dict", labelInstance)
 	if !multiCommand:
-		call_deferred("set_meta_pressed", labelInstance)
+		call_deferred("set_command", labelInstance)
 	else:
 		call_deferred("set_multicommand")
 
@@ -37,7 +37,7 @@ func check_interactable_dict(instance):
 		if key in interactDialog[clicks]:
 			instance.set(key, interactDialog[clicks].get(key))
 
-func set_meta_pressed(labelInst):
+func set_command(labelInst):
 	labelInst.bbcode_text = ("> " + labelInst.command)
 	lastWidth = labelInst.get("theme_override_fonts/normal_font").get_string_size(labelInst.text,HORIZONTAL_ALIGNMENT_LEFT, -1,labelInst.get("theme_override_font_sizes/normal_font_size")).x + COMMAND_MARGIN
 	if width < lastWidth:
@@ -68,4 +68,4 @@ func set_multicommand():
 		for key in dict:
 			if key in i:
 				lab.set(key, i.get(key))
-		call_deferred("set_meta_pressed", lab)
+		call_deferred("set_command", lab)

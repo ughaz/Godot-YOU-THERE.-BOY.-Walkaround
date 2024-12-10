@@ -345,7 +345,7 @@ libraries = {
 
 [node name="KernelInteractable" type="Area2D" parent="."]
 script = ExtResource("14")
-interactDialog = [SubResource("3"), SubResource("4"), SubResource("5")]
+interactDialog = Array[ExtResource("15")]([SubResource("3"), SubResource("4"), SubResource("5")])
 extraFunc = NodePath("../KSExtraFunc")
 
 [node name="KernelSprite1" type="CollisionPolygon2D" parent="KernelInteractable"]

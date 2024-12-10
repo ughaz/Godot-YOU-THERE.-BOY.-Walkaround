@@ -9,9 +9,8 @@ var selected:bool = false;
 var commandBox = load("res://UI/Command Box/CommandPlayer.tscn")
 
 func _ready():
-	var interactable = self
-	interactable.connect("mouse_entered", Callable(self, "_on_mouse_entered"))
-	interactable.connect("mouse_exited", Callable(self, "_on_mouse_exited"))
+	connect("mouse_entered", _on_mouse_entered)
+	connect("mouse_exited", _on_mouse_exited)
 
 func _on_mouse_entered()->void:
 	Global.hoverNodes.append(self);
@@ -39,7 +38,7 @@ func _process(_delta):
 		Global.remove_commands();
 		Global.commandsNode.add_child(commandBoxInstance);
 		if !multiCommand:
-			commandBoxInstance.connect("clicked", Callable(self, "updateClicks"))
+			commandBoxInstance.connect("clicked", updateClicks)
 			commandBoxInstance.clicks = clicks
 		if extraFunc:
 			var extraFunction = get_node(extraFunc)
