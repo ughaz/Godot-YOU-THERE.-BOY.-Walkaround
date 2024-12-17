@@ -1,8 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://smtjqca7tewu"]
+[gd_scene load_steps=8 format=3 uid="uid://smtjqca7tewu"]
 
 [ext_resource type="Texture2D" uid="uid://ugod5fcsjetg" path="res://UI/Dialog Box/9patch_dialog.png" id="1"]
 [ext_resource type="FontFile" uid="uid://eeeduvxejskm" path="res://UI/Dialog Box/courbd.ttf" id="2"]
 [ext_resource type="Script" path="res://UI/Dialog Box/DialogPlayer.gd" id="3"]
+
+[sub_resource type="FontVariation" id="FontVariation_5khle"]
+base_font = ExtResource("2")
+spacing_space = -3
+spacing_top = 1
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Open"
@@ -87,7 +92,7 @@ offset_bottom = -24.0
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2")
+theme_override_fonts/normal_font = SubResource("FontVariation_5khle")
 theme_override_font_sizes/normal_font_size = 14
 bbcode_enabled = true
 scroll_active = false

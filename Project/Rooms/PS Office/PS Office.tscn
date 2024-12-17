@@ -80,14 +80,14 @@ centered = false
 
 [node name="Interactable" type="Area2D" parent="Node2D/Room/What Pumpkin"]
 script = ExtResource("7")
-interactDialog = [SubResource("4")]
+interactDialog = Array[ExtResource("8")]([SubResource("4")])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Room/What Pumpkin/Interactable"]
 polygon = PackedVector2Array(0, 50.1339, 8.77344, 86.4809, 66.4274, 110.294, 106.534, 100.268, 120.321, 63.9207, 92.7477, -1.25336, 15.0402, 16.2935)
 
 [node name="VaultInteractable" type="Area2D" parent="Node2D/Room"]
 script = ExtResource("7")
-interactDialog = [SubResource("1"), SubResource("2"), SubResource("3")]
+interactDialog = Array[ExtResource("8")]([SubResource("1"), SubResource("2"), SubResource("3")])
 multiCommand = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Room/VaultInteractable"]
@@ -95,7 +95,7 @@ polygon = PackedVector2Array(-492, 596, -319, 569, -314, 311, -505, 285)
 
 [node name="WindowInteractable" type="Area2D" parent="Node2D/Room"]
 script = ExtResource("7")
-interactDialog = [SubResource("5"), SubResource("6")]
+interactDialog = Array[ExtResource("8")]([SubResource("5"), SubResource("6")])
 multiCommand = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Room/WindowInteractable"]
@@ -117,7 +117,7 @@ polygon = PackedVector2Array(-1, 2, 193, 93, 297, 57, 96, -26)
 
 [node name="Interactable" type="Area2D" parent="Node2D/Desk"]
 script = ExtResource("7")
-interactDialog = [SubResource("7")]
+interactDialog = Array[ExtResource("8")]([SubResource("7")])
 
 [node name="PsDesk" type="Sprite2D" parent="Node2D/Desk/Interactable"]
 position = Vector2(-12, -206)

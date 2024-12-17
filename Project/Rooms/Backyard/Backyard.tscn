@@ -243,14 +243,14 @@ polygon = PackedVector2Array(-607, 2254, -255, 2429, -255, 2447, -57, 2543, -38,
 
 [node name="ChimneyInteractable" type="Area2D" parent="Node2D/Yard"]
 script = ExtResource("22")
-interactDialog = [SubResource("7")]
+interactDialog = Array[ExtResource("24")]([SubResource("7")])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Yard/ChimneyInteractable"]
 polygon = PackedVector2Array(-208, 216, -161, 238, -67, 192, -67, 168, -114, 146, -208, 193)
 
 [node name="GaugeInteractable" type="Area2D" parent="Node2D/Yard"]
 script = ExtResource("22")
-interactDialog = [SubResource("8")]
+interactDialog = Array[ExtResource("24")]([SubResource("8")])
 
 [node name="gauge" type="Sprite2D" parent="Node2D/Yard/GaugeInteractable"]
 position = Vector2(-688, 2106)
@@ -261,7 +261,7 @@ polygon = PackedVector2Array(-724, 2174, -724, 2025, -672, 2013, -653, 2021, -65
 
 [node name="CablesInteractable" type="Area2D" parent="Node2D/Yard"]
 script = ExtResource("22")
-interactDialog = [SubResource("9")]
+interactDialog = Array[ExtResource("24")]([SubResource("9")])
 
 [node name="cables" type="Sprite2D" parent="Node2D/Yard/CablesInteractable"]
 position = Vector2(-674, 2337)
@@ -303,7 +303,7 @@ position = Vector2(92.5531, -345.745)
 
 [node name="BaubleInteractable" type="Area2D" parent="Node2D/Tree"]
 script = ExtResource("22")
-interactDialog = [SubResource("12")]
+interactDialog = Array[ExtResource("24")]([SubResource("12")])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Tree/BaubleInteractable"]
 polygon = PackedVector2Array(443.617, -492.553, 440.426, -424.468, 467.021, -407.447, 479.787, -417.021, 485.106, -497.872, 463.83, -502.128)
@@ -321,7 +321,7 @@ polygon = PackedVector2Array(-86, 6, -64, 29, 44, 35, 84, 37, 102, 22, 108, -18,
 
 [node name="Interactable" type="Area2D" parent="Node2D/Pogo"]
 script = ExtResource("22")
-interactDialog = [SubResource("10")]
+interactDialog = Array[ExtResource("24")]([SubResource("10")])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Pogo/Interactable"]
 polygon = PackedVector2Array(-86, 6, -64, 29, 44, 35, 84, 37, 102, 22, 108, -18, 68.0851, -39.3618, 41.4894, -45.7447, 70.2128, -69.149, 82.9787, -112.766, 51.0638, -189.362, -1.06383, -217.021, -36.1702, -218.085, -41.4894, -197.872, -22.3404, -170.213, -60.6383, -174.468, -79.7872, -125.532, -79.7872, -91.4894, -60.6383, -62.766, -19.1489, -43.6171, -48, -17)
@@ -340,7 +340,7 @@ polygon = PackedVector2Array(-392, -9, -396, -5, -396, 2, -393, 7, -372, 6, -202
 
 [node name="Interactable" type="Area2D" parent="Node2D/Swing"]
 script = ExtResource("22")
-interactDialog = [SubResource("11")]
+interactDialog = Array[ExtResource("24")]([SubResource("11")])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Swing/Interactable"]
 polygon = PackedVector2Array(-397.872, -5.31921, -388.298, 14.8936, 7.44681, -196.809, -222.34, -7.4469, -209.574, 10.6382, 42.5532, -195.745, 87.234, -89.3618, 162.766, 138.298, -234.043, 402.128, -222.34, 421.276, 158.511, 164.894, -70.2128, 513.83, -54.2553, 534.042, 210.638, 134.042, 192.553, 119.149, 50, -250)
@@ -363,7 +363,7 @@ remote_path = NodePath("../../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(349, 225)
-zoom = Vector2(1.25, 1.25)
+zoom = Vector2(0.75, 0.75)
 process_callback = 0
 limit_left = -1750
 limit_top = -2176
@@ -377,7 +377,7 @@ editor_draw_limits = true
 
 [node name="UtilityRoomDoor" type="Area2D" parent="."]
 script = ExtResource("22")
-interactDialog = [SubResource("6")]
+interactDialog = Array[ExtResource("24")]([SubResource("6")])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="UtilityRoomDoor"]
 polygon = PackedVector2Array(313, 235, 484, 319, 483, -120, 313, -202)
